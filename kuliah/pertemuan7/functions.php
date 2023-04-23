@@ -29,7 +29,7 @@ function tambah($data)
   $conn = koneksi();
 
   $nama = htmlspecialchars($data['nama']);
-  $nim = htmlspecialchars($data['nim']);
+  $nrp = htmlspecialchars($data['nrp']);
   $email = htmlspecialchars($data['email']);
   $jurusan = htmlspecialchars($data['jurusan']);
   $gambar = htmlspecialchars($data['gambar']);
@@ -37,7 +37,7 @@ function tambah($data)
   $query = "INSERT INTO
               mahasiswa
             VALUES
-            (null, '$nama', '$nim', '$email', '$jurusan', '$gambar');
+            (null, '$nama', '$nrp', '$email', '$jurusan', '$gambar');
           ";
   mysqli_query($conn, $query);
   echo mysqli_error($conn);

@@ -34,7 +34,7 @@ $mahasiswa = $rows;
     <tr>
       <th>#</th>
       <th>Gambar</th>
-      <th>NIM</th>
+      <th>NRP</th>
       <th>Nama</th>
       <th>Email</th>
       <th>Jurusan</th>
@@ -45,7 +45,7 @@ $mahasiswa = $rows;
       <tr>
         <td><?= $i++; ?></td>
         <td><img src="img/<?= $m['gambar']; ?>" width="60"></td>
-        <td><?= $m['nim']; ?></td>
+        <td><?= $m['nrp']; ?></td>
         <td><?= $m['nama']; ?></td>
         <td><?= $m['email']; ?></td>
         <td><?= $m['jurusan']; ?></td>
